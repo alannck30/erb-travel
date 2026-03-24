@@ -180,7 +180,7 @@ body {
   height: 100%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
-    url(../assets/london_assets/london2.jpg) center / cover;
+    url(../assets/london_assets/london2.webp) center / cover;
   display: flex;
   justify-content: center;
   align-items: center;

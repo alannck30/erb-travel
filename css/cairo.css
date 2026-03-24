@@ -180,7 +180,7 @@ body {
   height: 100%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
-    url(../assets/cairo_assets/cairo.jpg) center / cover;
+    url(../assets/cairo_assets/cairo.webp) center / cover;
   display: flex;
   justify-content: center;
   align-items: center;

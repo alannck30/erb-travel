@@ -180,7 +180,7 @@ body {
   height: 100%;
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
-    url(../assets/hongkong_assets/hongkong.jpg) center / cover;
+    url(../assets/hongkong_assets/hongkong.webp) center / cover;
   display: flex;
   justify-content: center;
   align-items: center;
