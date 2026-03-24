@@ -61,7 +61,7 @@ sections.forEach((section) => observer.observe(section));
 // #region culture
 const food = {
   id: "food",
-  imagePath: "../assets/hongkong_assets/hk_dimsum.jpg",
+  imagePath: "../assets/hongkong_assets/hk_dimsum.webp",
   about:
     "Hong Kong is the world's culinary capital. Its heart lies in Dim Sum — 'touching the heart' — small bite-sized portions served in bamboo steamers.",
   content: {
@@ -74,7 +74,7 @@ const food = {
 
 const cha = {
   id: "cha",
-  imagePath: "../assets/hongkong_assets/hk_cha.jpg",
+  imagePath: "../assets/hongkong_assets/hk_cha.webp",
   about:
     "The 'Cha Chaan Teng' (Tea Restaurant) is the soul of Hong Kong's local dining. It represents the city's unique fusion of British and Chinese culinary habits.",
   content: {
@@ -87,7 +87,7 @@ const cha = {
 
 const festival = {
   id: "festival",
-  imagePath: "../assets/hongkong_assets/hk_festival.jpg",
+  imagePath: "../assets/hongkong_assets/hk_festival.webp",
   about:
     "Hong Kong celebrates its heritage through spectacular festivals, featuring fire dragons, massive bamboo theaters, and rhythmic drum beats.",
   content: {
@@ -100,7 +100,7 @@ const festival = {
 
 const cinema = {
   id: "cinema",
-  imagePath: "../assets/hongkong_assets/hk_cinema.jpg",
+  imagePath: "../assets/hongkong_assets/hk_cinema.webp",
   about:
     "From the golden age of Cantopop to the legendary action cinema, Hong Kong’s entertainment industry has influenced global pop culture for decades.",
   content: {

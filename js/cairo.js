@@ -61,7 +61,7 @@ sections.forEach((section) => observer.observe(section));
 // #region culture
 const food = {
   id: "food",
-  imagePath: "../assets/cairo_assets/cairo_food.jpg",
+  imagePath: "../assets/cairo_assets/cairo_food.webp",
   about:
     "Cairo's food scene is a delicious blend of ancient traditions and modern flavors. From street food to fine dining, the city offers an unforgettable culinary journey.",
   content: {
@@ -74,7 +74,7 @@ const food = {
 
 const cafe = {
   id: "cafe",
-  imagePath: "../assets/cairo_assets/cairo_coffee.jpg",
+  imagePath: "../assets/cairo_assets/cairo_coffee.webp",
   about:
     "Cairo's coffee houses, known as 'ahwas,' are the heartbeat of social life. These traditional cafes have been gathering places for intellectuals, artists, and friends for generations.",
   content: {
@@ -87,7 +87,7 @@ const cafe = {
 
 const festival = {
   id: "festival",
-  imagePath: "../assets/cairo_assets/cairo_festival.jpg",
+  imagePath: "../assets/cairo_assets/cairo_festival.webp",
   about:
     "Cairo comes alive with vibrant festivals throughout the year, celebrating religious holidays, cultural events, and artistic achievements.",
   content: {
@@ -100,7 +100,7 @@ const festival = {
 
 const music = {
   id: "music",
-  imagePath: "../assets/cairo_assets/cairo_music.jpg",
+  imagePath: "../assets/cairo_assets/cairo_music.webp",
   about:
     "Cairo is the beating heart of Arabic music, home to legendary composers and singers. The city's musical tradition spans from classical Arabic melodies to modern pop.",
   content: {

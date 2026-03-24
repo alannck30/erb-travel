@@ -61,7 +61,7 @@ sections.forEach((section) => observer.observe(section));
 // #region culture
 const food = {
   id: "food",
-  imagePath: "../assets/london_assets/fish_chips.jpg",
+  imagePath: "../assets/london_assets/fish_chips.webp",
   about:
     "London's culinary scene is a melting pot of global influences. From traditional pub grub to over 60 Michelin-starred restaurants, the city is a world-class destination for food lovers.",
   content: {
@@ -74,7 +74,7 @@ const food = {
 
 const tea = {
   id: "tea",
-  imagePath: "../assets/london_assets/afternoon_tea.jpg",
+  imagePath: "../assets/london_assets/afternoon_tea.webp",
   about:
     "While coffee is popular, London's tea culture is legendary. From historic tea rooms to trendy East London cafes, the ritual of a 'proper brew' is central to London life.",
   content: {
@@ -87,7 +87,7 @@ const tea = {
 
 const festival = {
   id: "festival",
-  imagePath: "../assets/london_assets/notting_hill.jpg",
+  imagePath: "../assets/london_assets/notting_hill.webp",
   about:
     "London’s calendar is packed with world-famous events, from royal pageantry and flower shows to massive street carnivals that celebrate the city's diversity.",
   content: {
@@ -100,7 +100,7 @@ const festival = {
 
 const music = {
   id: "music",
-  imagePath: "../assets/london_assets/london_music.jpg",
+  imagePath: "../assets/london_assets/london_music.webp",
   about:
     "As the birthplace of legendary bands and the global 'Cool Britannia' movement, London remains a powerhouse of rock, pop, and classical music performance.",
   content: {

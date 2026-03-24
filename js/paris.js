@@ -61,7 +61,7 @@ sections.forEach((section) => observer.observe(section));
 // #region culture
 const food = {
   id: "food",
-  imagePath: "../assets/paris_assets/food.jpg",
+  imagePath: "../assets/paris_assets/food.webp",
   about:
     "Paris is the global capital of gastronomy, where dining is an art form. From rustic bistros to Michelin-starred establishments, the city defines the standards of world cuisine.",
   content: {
@@ -74,7 +74,7 @@ const food = {
 
 const drink = {
   id: "drink",
-  imagePath: "../assets/paris_assets/wine.jpg",
+  imagePath: "../assets/paris_assets/wine.webp",
   about:
     "In Paris, wine isn't just a drink; it's a way of life. From the historic vineyards of Montmartre to cozy 'bars à vins,' the city offers the finest selections of Terroir-driven French wines.",
   content: {
@@ -87,7 +87,7 @@ const drink = {
 
 const festival = {
   id: "festival",
-  imagePath: "../assets/paris_assets/festival.jpg",
+  imagePath: "../assets/paris_assets/festival.webp",
   about:
     "Paris celebrates life through a calendar of elegant events, from world-leading fashion weeks to massive public celebrations along the Seine.",
   content: {
@@ -100,7 +100,7 @@ const festival = {
 
 const music = {
   id: "music",
-  imagePath: "../assets/paris_assets/music.jpg",
+  imagePath: "../assets/paris_assets/music.webp",
   about:
     "From the haunting melodies of Edith Piaf's Chanson to the sophisticated jazz of the Left Bank, Paris has always been a sanctuary for musical innovation.",
   content: {

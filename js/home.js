@@ -37,12 +37,14 @@ cards.forEach((card) => {
       }
     });
     videos.forEach((video) => {
-      video.classList.remove("active");
-      video.pause();
-
       if (card.classList.contains(video.id.split("-")[1])) {
         video.classList.add("active");
-        video.play();
+        if (video.paused) {
+          video.play().catch((e) => console.log("intercept", e));
+        }
+      } else {
+        video.classList.remove("active");
+        video.pause();
       }
     });
   });
