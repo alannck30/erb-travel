@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* #region global */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+p {
+  text-transform: capitalize;
+}
+
+.grid-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: grid;
+  grid-template-rows: 80px auto auto 40px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "title title media media"
+    "cairo hongkong london paris"
+    "footer footer footer footer";
+}
+
+.grid-container .bg {
+  filter: brightness(70%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+.grid-container .bg.active {
+  opacity: 1;
+}
+
+/* #endregion */
+
+/* #region navbar */
+.navbar {
+  grid-area: navbar;
+  background: linear-gradient(to bottom, #0a2647a2 0%, #0a264754 50%, transparent 100%);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.navbar__container--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin: 0 2rem;
+}
+
+.navbar__brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__brand h1 {
+  color: white;
+}
+
+.navbar__logo {
+  width: 3rem;
+}
+
+.navbar__main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+}
+
+.navbar__main-menu-list {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar__main-menu-list li {
+  font-size: 1.5rem;
+  a {
+    color: #e0e4e8;
+  }
+  a:hover {
+    color: #e1ae12;
+  }
+}
+
+.navbar__mobile-menu {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 2rem;
+  color: #e0e4e8;
+}
+
+.navbar__mobile-menu-items {
+  position: fixed;
+  z-index: 1000;
+  top: 80px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0a2647;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.navbar__mobile-menu-items.active {
+  transform: translateX(0);
+}
+
+.navbar__mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.2rem;
+}
+
+.navbar__mobile-menu-list li {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  width: 60%;
+  padding: 10px 0;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: blanchedalmond;
+}
+
+.navbar__mobile-menu-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.navbar__mobile-menu-list li:hover {
+  cursor: pointer;
+  background-color: #e1ae12;
+  a {
+    color: #e0e4e8;
+  }
+}
+/* #endregion */
+
+/* #region hero */
+.hero__content {
+  z-index: 10;
+  grid-area: title;
+  text-align: center;
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    color: white;
+  }
+  p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: white;
+  }
+  a {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #0a2647;
+    color: #e0e4e8;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-transform: capitalize;
+  }
+  a:hover {
+    color: #e1ae12;
+    background-color: #164073;
+    transform: scale(1.02);
+  }
+}
+
+.hero__media {
+  position: relative;
+  grid-area: media;
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow:
+    0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.hero__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  object-fit: cover;
+}
+
+.hero__video.active {
+  opacity: 1;
+}
+
+/* #endregion */
+
+/* #region crads */
+
+.section__card-container {
+  z-index: 10;
+  width: 20rem;
+  height: 330px;
+  background-color: #14355a;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow:
+    0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+
+  h3 {
+    font-size: 1.5rem;
+    color: #e0e4e8;
+  }
+  p {
+    font-size: 1rem;
+    color: #e0e4e8;
+  }
+}
+
+.cairo {
+  grid-area: cairo;
+}
+.hongkong {
+  grid-area: hongkong;
+}
+.london {
+  grid-area: london;
+}
+.paris {
+  grid-area: paris;
+}
+
+.section__card-container:hover {
+  h3,
+  p {
+    color: #e1ae12;
+  }
+  background-color: #164073;
+  transform: scale(1.02);
+}
+
+.section__card-content {
+  padding: 1rem;
+}
+
+.section__card-description {
+  margin: 1rem 0;
+}
+
+.section__card-image {
+  width: 100%;
+}
+
+/* #endregion */
+
+/* #region footer */
+.footer {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, #0a2647a2 0%, #0a264754 50%, transparent 100%);
+  color: #e0e4e8;
+}
+/* #endregion */
+
+/* #region RWD */
+@media (max-width: 1300px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px 1fr 1fr 1fr 40px;
+    gap: 2rem;
+    grid-template-areas:
+      "navbar navbar"
+      "title media"
+      "cairo hongkong"
+      "london paris"
+      "footer footer";
+  }
+
+  .hero__content {
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    a {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 1fr auto auto auto auto 40px;
+    grid-template-areas:
+      "navbar"
+      "title"
+      "media"
+      "cairo"
+      "hongkong"
+      "london"
+      "paris"
+      "footer";
+  }
+
+  .section__card-container {
+    width: 80%;
+    height: auto;
+  }
+
+  .navbar__mobile-menu {
+    display: block;
+  }
+  .navbar__main-menu {
+    display: none;
+  }
+}
+/* #endregion */
